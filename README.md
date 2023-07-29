@@ -1,6 +1,35 @@
 # KV
 
-**TODO: Add description**
+# Install latest version of erlang and elixir via asdf
+
+```
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf
+. $HOME/.asdf/asdf.sh
+asdf plugin add erlang
+asdf plugin add elixir
+asdf list-all erlang
+asdf list-all elixir
+```
+
+find the latest available version then install
+
+```
+asdf install erlang xx.xx.x
+asdf install elixir x.xx.x-otp-yy
+```
+
+## Set project version
+
+```
+asdf local erlang 26.0.2
+asdf local elixir 1.15.4-otp-26
+```
+
+## Execute simple.exs
+
+```
+elixir simple.exs
+```
 
 ## Installation
 
