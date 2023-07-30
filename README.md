@@ -31,6 +31,31 @@ asdf local elixir 1.15.4-otp-26
 elixir simple.exs
 ```
 
+## Compile this kv lib
+
+```
+cd kv
+mix compile
+mix test
+mix test test/kv_test.exs:5
+```
+
+## Configure database
+
+configure database in config/dev.exs, then
+
+
+```
+cd server
+mix ecto.create
+```
+
+## Run server
+
+```
+mix phx.server
+```
+
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
