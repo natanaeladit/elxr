@@ -27,3 +27,6 @@ kv-*.tar
 
 # Ignore release assets
 priv
+
+# dot env
+.env
